@@ -136,5 +136,74 @@ fun main ()
     val myNewMap = hashMapOf<String,Int>("A" to 1,"B" to 2, "C" to 3)
     println(myNewMap["C"])
 
+    //Control Statements
 
+    val myNumberAge = 32
+
+    if(myNumberAge<30)
+    {
+        println("<30")
+    }else if(myNumberAge>=30 && myNumberAge<40)
+    {
+        println(">=30 && <40")
+    }
+
+    val day = 3
+    var dayString = ""
+
+    /*
+    if(day == 1)
+    {
+        dayString = "Monday"
+    }else if (day == 2)
+    {
+        dayString = "Tuesday"
+    }else if (day == 3)
+    {
+        dayString = "Wednesday"
+    }
+    println(dayString)
+
+     */
+
+    when (day)
+    {
+        1-> dayString = "Monday"
+        2-> dayString = "Tuesday"
+        3-> dayString = "Wednesday"
+        else -> dayString = " "
+    }
+    println(dayString)
+
+    //Loops
+
+    val myArrayofNumbers = arrayOf(12,15,18,21,24,27,30,33)
+    val q = myArrayofNumbers[0] / 3 * 5
+    println(q)
+
+    for(number in myArrayofNumbers)
+    {
+        val z = number / 3 * 5
+        println(z)
+    }
+
+    val myStringArrayList = ArrayList<String>()
+    myStringArrayList.add("Mert")
+    myStringArrayList.add("Can")
+    myStringArrayList.add("Unek")
+    myStringArrayList.add("Oglus")
+    myStringArrayList.add("Cilek")
+
+    for (str in myStringArrayList)
+    {
+        println(str)
+    }
+
+    var j = 0
+    while (j<10)
+    {
+        println(j)
+        j++
+
+    }
 }
