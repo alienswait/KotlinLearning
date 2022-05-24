@@ -1,2 +1,2 @@
 # KotlinLearning
- Kotlin basics 
+ Getting started with kotlin 
